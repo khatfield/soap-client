@@ -1,7 +1,7 @@
 <?php
 namespace Khatfield\SoapClient\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 class RequestEvent extends Event
 {
