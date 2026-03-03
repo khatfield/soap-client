@@ -28,7 +28,7 @@
     "ext-json": "*",
     "ext-xml": "*",
     "psr/log": "*",
-    "symfony/event-dispatcher": "^5",
+    "symfony/event-dispatcher": "^8",
     "doctrine/collections": "~1.6"
   },
   "require-dev": {
