@@ -2,29 +2,16 @@
 
 namespace Khatfield\SoapClient\Result;
 
-/**
- * Standard object
- *
- */
 class SObject
 {
-    /**
-     * @var string
-     */
-    public $Id;
+    public string $Id;
 
-    public function getId()
+    public function getId(): string
     {
         return $this->Id;
     }
 
-    /**
-     * @param string $field
-     * @param null $default
-     *
-     * @return mixed
-     */
-    public function get($field, $default = null)
+    public function get(string $field, $default = null): mixed
     {
         if(isset($this->$field)){
             return $this->$field;
@@ -32,4 +19,12 @@ class SObject
             return $default;
         }
     }
+
+    public function set(string $field, $value): SObject
+    {
+        $this->$field = $value;
+
+        return $this;
+    }
+
 }
