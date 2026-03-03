@@ -4,7 +4,7 @@ namespace Khatfield\SoapClient\Result;
 
 class SObject
 {
-    public string $Id;
+    public $Id;
 
     public function getId(): string
     {
